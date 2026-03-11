@@ -1,0 +1,87 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Nest Interiors | Expert Design in South Banglore</title>
+    <meta name="description" content="Custom interior design for homes in South Bangalore. Specializing in modular kitchens and full home interiors for apartments and villas in Chandapura and Anekal.">
+    <style>
+        :root { --primary: #2d3436; --accent: #d4af37; --light: #f9f9f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--primary); line-height: 1.6; }
+        header { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); position: sticky; top: 0; z-index: 1000; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'); 
+                background-size: cover; background-position: center; color: white; padding: 120px 5%; text-align: center; }
+        .location-tag { background: var(--accent); color: black; padding: 6px 18px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; margin-bottom: 15px; display: inline-block; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 5%; background: var(--light); }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .lead-form-box { max-width: 550px; margin: 60px auto; padding: 40px; border-radius: 15px; background: white; box-shadow: 0 0 30px rgba(0,0,0,0.1); border: 1px solid #eee; }
+        input, select, textarea { width: 100%; padding: 14px; margin: 12px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
+        .btn { background: var(--accent); color: white; padding: 16px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #b8962d; }
+        footer { background: var(--primary); color: white; padding: 50px 5%; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.6rem; font-weight: 900; letter-spacing: -1px;">NAMMA NEST <span style="color: var(--accent);">INTERIORS</span></div>
+    <div style="font-weight: bold;">South Bangalore</div>
+</header>
+
+<section class="hero">
+    <div class="location-tag">Chandapura • Attibele • Anekal</div>
+    <h1 style="font-size: 3rem; margin: 10px 0;">Premium Interiors for Your Dream Home</h1>
+    <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto;">Specialized interior solutions for apartments and villas in South Bangalore.</p>
+    <button class="btn" style="width: auto;" onclick="document.getElementById('inquiry').scrollIntoView();">GET A FREE QUOTE</button>
+</section>
+
+<section class="services">
+    <div class="card">
+        <h2 style="color: var(--accent);">Modular Kitchens</h2>
+        <p>Smart, space-saving kitchen designs for modern apartments.</p>
+    </div>
+    <div class="card">
+        <h2 style="color: var(--accent);">Wardrobes</h2>
+        <p>Custom-built storage solutions that maximize your space.</p>
+    </div>
+    <div class="card">
+        <h2 style="color: var(--accent);">Full Home</h2>
+        <p>End-to-end interior transformation from floor to ceiling.</p>
+    </div>
+</section>
+
+<div class="lead-form-box" id="inquiry">
+    <h2 style="text-align: center; margin-top: 0;">Book a Site Visit</h2>
+    <p style="text-align: center; color: #666;">Get an expert consultation at your doorstep.</p>
+    <form id="namma-nest-lead">
+        <input type="text" id="cust-name" placeholder="Your Name" required>
+        <input type="text" id="cust-phone" placeholder="Phone Number" required>
+        <select id="cust-location" required>
+            <option value="">Select Your Area</option>
+            <option value="Chandapura">Chandapura</option>
+            <option value="Attibele">Attibele</option>
+            <option value="Anekal">Anekal</option>
+            <option value="Electronic City">Electronic City</option>
+            <option value="Other">Other</option>
+        </select>
+        <textarea placeholder="Describe your requirement (Optional)" rows="3"></textarea>
+        <button type="submit" class="btn" id="submit-btn">SEND REQUEST</button>
+    </form>
+</div>
+
+<footer>
+    <h3 style="margin-bottom: 10px;">Namma Nest Interiors</h3>
+    <p>Providing quality interiors in Chandapura, Attibele, and Anekal since 2026.</p>
+    <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">
+        &copy; 2026 Namma Nest Interiors | All Rights Reserved
+    </div>
+</footer>
+
+<a href="https://wa.me/91[YOUR_NUMBER_HERE]" class="whatsapp-float" target="_blank">
+    WhatsApp Us
+</a>
+
+</body>
+</html>
